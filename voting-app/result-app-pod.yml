@@ -1,5 +1,5 @@
 apiVersion: v1
-king: Pod
+kind: Pod
 metadata:
   name: result-app-pod
   labels:
@@ -8,6 +8,6 @@ metadata:
 spec:
   containers:
     - name: result-app
-      image: kodekloud/examplevotingapp_result
+      image: kodekloud/examplevotingapp_result:v1
       ports:
         - containerPort: 80

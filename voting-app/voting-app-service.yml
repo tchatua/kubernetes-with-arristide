@@ -1,3 +1,5 @@
+---
+# voting-app frontend service
 apiVersion: v1
 kind: Service
 metadata:
@@ -10,7 +12,7 @@ spec:
   ports:
     - port: 80
       targetPort: 80
-      NodePort: 30005
-selector:
-  name: voting-app-pod
-  app: voting-app
+      nodePort: 30005
+  selector:
+    name: voting-app-pod
+    app: voting-app
